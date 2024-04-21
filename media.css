@@ -1,0 +1,9 @@
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 768px) {
+    /* Add your media queries for tablet and mobile devices here */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Add your media queries for mobile devices here */
+}

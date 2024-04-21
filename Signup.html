@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #7b7b81;
+        }
+
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+         @keyframes glow { 
+            0% {
+                background: linear-gradient(45deg, #c2d6eb, #4c4d4d);
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            }
+            100% {
+                background: linear-gradient(45deg, #00ffff, #2e416d);
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                            0 0 40px rgba(255, 255, 255, 0.5),
+                            0 0 60px rgba(255, 255, 255, 0.5),
+                            0 0 80px rgba(255, 255, 255, 0.5),
+                            0 0 100px rgba(255, 255, 255, 0.5);
+            }
+         }
+
+        .container h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .container p {
+            text-align: center;
+            color: #fff;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button[type="button"],
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+        }
+
+        button[type="button"]:hover,
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form id="forms">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw_repeat" required>  
+            <!-- <input type="submit" name="" class="formsubimt" id="submit">  -->
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Reset</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+<script src="signup.js"></script>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <title>Hacer</title>
+
+    <style>
+        .clothesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.clothesItem {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.clothesItem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.clothesItem h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.clothesItem p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}
+.availableItemsHeading {
+    text-align: center;
+    color: #fff; 
+    font-size: 36px; 
+    
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff; 
+    }
+    100% {
+        text-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff; 
+    }
+}
+
+
+
+
+    </style>
+</head>
+
+
+<body onscroll="checkOffset()" onload="openPage()">
+    <div class="background"></div>
+
+
+    
+
+    <header id="header">
+
+        <div class="headerContents">
+            <div id="headerLogoContent">
+
+               
+
+                <div class="imageContent">
+                    <div class="rectangle0"></div>
+                    <div class="rectangle1"></div>
+                    <div class="rectangle2"></div>
+                    <div class="rectangle3"></div>
+                    <div class="rectangle4"></div>
+                    <div class="rectangle5"></div>
+                </div>
+
+                <h1 class="logoName">Apna Closet</h1>
+
+            </div>
+
+           
+
+            <div class="headerNavContents">
+                <nav>
+                    <ul id="ul">
+                        <li class="li"><a href="rent.html">Rent</a></li>
+                        <li class="li"><a href="Buy.html">Buy</a></li>
+                        <li class="li"><a href="sell.html">SELL</a></li>
+                        <li id="contact"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+<section class="topCover">
+    
+    <div class="landingText">
+        <div class="textComponent"> 
+            <div class="mainText">Apna Closet</div>
+            <hr class="line">
+            <div class="tagline">Own It!!</div>
+            <div class="landingShopButton"><a href="#ab">Shop Now</a></div>
+        </div>
+
+        <div class="moveArrows" onclick="scrollPage(1)">
+            <div class="downArrow1">V</div>
+            <div class="downArrow2">v</div>
+        </div>
+    </div>
+
+    
+    <h2 class="availableItemsHeading" id="ab">Available Items</h2> 
+
+    
+    <div class="clothesContainer">
+        <div class="clothesItem">
+            <img src="t1.jpg" alt="Clothing item 1">
+            <h3>Hoodies</h3>
+            <p></p>
+        </div>
+        <div class="clothesItem">
+            <img src="t2.jpg" alt="Clothing item 2">
+            <h3>Tracksuit</h3>
+            <p></p>
+        </div>
+        <div class="clothesItem">
+            <img src="t3.jpg" alt="Clothing item 1">
+            <h3>Sweatshirt</h3>
+            <p></p>
+        </div>
+        <div class="clothesItem">
+            <img src="t5.jpg" alt="Clothing item 1">
+            <h3>Shirts</h3>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
