@@ -16,37 +16,37 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'PRODUCT NAME 1',
+        name:'Regular Brown Tshirt',
         image: 't1.jpg',
         price: 1200
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
+        name: 'Black Lower',
         image: 't2.jpg',
         price: 1800
     },
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
+        name: 'Comfy Grey Pants',
         image: 't3.jpg',
         price: 2200
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
+        name: 'Basic Knitted Hood',
         image: 't4.jpg',
         price: 1230
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
+        name: 'Red Jacket',
         image: 't5.jpg',
         price: 3200
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
+        name: 'Blue Jacket',
         image: 't6.jpg',
         price: 2000
     }
