@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApnaCloset - Rent Your Perfect Outfit</title>
+    <!-- Custom CSS links -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- Custom CSS links -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                ApnaCloset
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="#dresses" class="list-item">Dresses</a></li>
+                <li><a href="#suits" class="list-item">Suits</a></li>
+                <li><a href="#accessories" class="list-item">Accessories</a></li>
+                <li><a href="#aboutus" class="list-item">About us</a></li>
+                <li><a href="#contact" class="list-item contact">Contact us</a></li>
+                <li><a href="#rent" class="list-item">Rent</a></li> <!-- Added Rent option -->
+            </ul>
+
+            <div class="mobile-menu" onclick="showMenu()">
+                <div class="line line1 "></div>
+                <div class="line line2 "></div>
+                <div class="line line3 "></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Header -->
+    <section class="header">
+        <div class="background-image"></div>
+        <div class="container">
+            <div class="header-info">
+                <h1 class="header-headline">Rent Your Perfect Outfit</h1>
+                <p class="header-subtitle">
+                    Find the perfect attire for any occasion.
+                    We offer a wide range of clothing options for rent.
+                </p>
+                <a href="#dresses" class="cta">Explore Dresses</a>
+            </div>
+        </div>
+    </section>
+
+    <form>
+        <div class="container">
+            <div class="input">
+                <input type="text" placeholder="Search by type (e.g., dress, suit)">
+                <img src="./images/search.svg" alt="">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Search by size (e.g., small, medium)">
+                <img src="./images/size.svg" alt="">
+            </div>
+            <div class="input search">
+                <input type="submit" value="Search Now">
+            </div>
+        </div>
+    </form>
+    
+    <section id="dresses" class="product-section">
+        <div class="container">
+            <h2 class="product-title">Our Traditional Dresses</h2>
+            <div class="product-grid">
+                <a href="another-page.html">
+                    <img src="beigebanglorian.jpg" alt="Dress 1">
+                  </a>
+                  <a href="another-page.html">
+                    <img src="indiankurtapyjamaredgold.jpg" alt="Dress 2">
+                  </a>
+                  
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="suits" class="product-section">
+        <div class="container">
+            <h2 class="product-title">Our Trendy Suits</h2>
+            <div class="product-grid">
+                <a href="another-page.html">
+                    <img src="mohamad-khosravi-Uw3OfKz2J-0-unsplash.jpg" alt="Suit 1">
+                  </a>
+                  
+                  <a href="another-page.html">
+                    <img src="nassim-boughazi-dodzmVtjoKs-unsplash.jpg" alt="Suit 2">
+                  </a>
+                  
+              
+            </div>
+        </div>
+    </section>
+    
+    <section id="accessories" class="product-section">
+        <div class="container">
+            <h2 class="product-title">Stylish Accessories</h2>
+            <div class="product-grid">
+                <img src="dgfghjk.jpg" alt="Accessory 1">
+                <img src="oiuy.jpg" alt="Accessory 2">
+           
+            </div>
+        </div>
+    </section>
+    <!-- Product Sections -->
+
+    <!-- Rent Section -->
+    <section id="rent" class="rent-section">
+        <div class="container">
+            <h2>Rent Your Perfect Outfit</h2>
+            <p>Choose from our wide collection of trendy clothes and rent them for any occasion.</p>
+            <a href="#dresses" class="cta">View Available Options</a>
+        </div>
+    </section>
+    <!-- Rent Section -->
+
+    <!-- About Us Section -->
+    <section id="aboutus" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are ApnaCloset, your go-to destination for renting trendy outfits and accessories for any occasion. Our mission is to provide you with the perfect attire that suits your style and fits your budget.</p>
+        </div>
+    </section>
+    <!-- About Us Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to contact us using the form below:</p>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+    <!-- Scripts -->
+</body>
+
+</html>

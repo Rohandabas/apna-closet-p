@@ -1,0 +1,35 @@
+.rental-plans {
+    background-color: #118cd4; /* Light gray background */
+    padding: 40px 0;
+    margin-top:100px;
+  }
+  
+  .plans-container {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+  }
+  .plan {
+    background-color: #fff; /* White background for plans */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .plan h2 {
+    color: #333; /* Dark gray for plan titles */
+  }
+  
+  .btn.btn-primaryx {
+    background-color: #052d58;
+    color:white; /* Blue primary button color */
+  }
+  
+  .btn.btn-primaryx:hover {
+    background-color: #a119ca; 
+    color:white;/* Darker blue on hover */
+  }
+  

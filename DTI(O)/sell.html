@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Clothes</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ApnaCloset - Sell Your Clothes Here</title>
+        <!-- Custom CSS links -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media.css">
+        <!-- Custom CSS links -->
+    </head> 
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                ApnaCloset
+            </div>
+            <ul class="nav-list">
+                <li><a href="#dresses" class="list-item">Dresses</a></li>
+                <li><a href="#suits" class="list-item">Suits</a></li>
+                <li><a href="#accessories" class="list-item">Accessories</a></li>
+                <li><a href="#aboutus" class="list-item">About us</a></li>
+                <li><a href="#contact" class="list-item contact">Contact us</a></li>
+                <li><a href="#rent" class="list-item">Sell</a></li> <!-- Added Rent option -->
+            </ul>
+
+            <div class="mobile-menu" onclick="showMenu()">
+                <div class="line line1 "></div>
+                <div class="line line2 "></div>
+                <div class="line line3 "></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Navbar -->
+
+    <!-- Header -->
+    <section class="header">
+        <div class="background-image"></div>
+        <div class="container">
+            <div class="header-info">
+                <h1 class="header-headline">Sell Your Clothes Here</h1>
+                <p class="header-subtitle">
+                    Find the perfect attire for any occasion.
+                    We offer a wide range of clothing options for rent.
+                </p>
+                <a href="#dresses" class="cta">Explore Dresses</a>
+            </div>
+        </div>
+    </section>
+    <!-- Header -->
+
+    <main>
+        <form id="sell-form" action="address.html" method="POST">
+            <label for="clothes-images">Upload Images:</label>
+            <input type="file" id="clothes-images" name="clothes-images" accept="image/*" multiple required>
+
+            <label for="clothes-name">Clothes Name:</label>
+            <input type="text" id="clothes-name" name="clothes-name" required>
+            <label for="clothes-price">Price:</label>
+            <input type="number" id="clothes-price" name="clothes-price" required>
+
+            <button type="submit" id="openButton">Upload &amp; Proceed</button>
+            <script src="sell.js"></script>
+        </form>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>

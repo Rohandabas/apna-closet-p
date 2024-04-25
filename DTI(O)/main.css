@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url(shop8.jpg);
+    background-size: cover;
+    filter: blur(2.5px); 
+}
+
+.topCover {
+    position: relative;
+    z-index: 1; 
+    
+}
+
+
+#header {
+    height: 0px;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    transition-duration: .5s;
+}
+
+#headerLogoContent {
+    position: absolute;
+    transform: scale(0.6);
+    transition-duration: .5s;
+}
+
+.rectangle0 {
+    position: absolute;
+    width: 118px;
+    height: 160px;
+    left: 63px;
+    top: 34px;
+    background: #ffffff;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 118px;
+    height: 119px;
+    left: 63px;
+    top: 34px;
+    background: #010101;
+}
+
+.rectangle2 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 62px;
+    top: 83px;
+    background: #FFFFFF;
+}
+
+.rectangle3 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 85px;
+    top: 56px;
+    background: #FFFFFF;
+}
+
+.rectangle4 {
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    left: 109px;
+    top: 55px;
+    background: #010101;
+}
+
+.rectangle5 {
+    position: absolute;
+    width: 26px;
+    height: 29px;
+    left: 109px;
+    top: 103px;
+    background: #010101;
+}
+
+.logoName {
+    position: absolute;
+    width: 119px;
+    height: 30px;
+    left: 63px;
+    top: 155px;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+#ul {
+    float: right;
+    margin: 32px 64px 16px 16px;
+    transition-duration: .5s;
+}
+
+nav ul li {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px 16px 0px 16px;
+    border: 1px;
+    padding: 16px 32px;
+    color: #FFFFFF;
+    transition-duration: 2s;
+    cursor: pointer;   
+}
+
+nav ul li a {
+    transition-duration: .1s;
+    padding-bottom: 2px;
+    color: #fff;
+    border-bottom: 0px solid white;
+    text-decoration: none;
+}
+
+nav ul li:hover a {
+    transition-duration: .1s;
+    border-bottom: 3px solid white;
+}
+
+#contact {
+    background-color: rgb(1, 154, 192);
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+.textComponent {
+    height: 200px;
+    width: 35%;
+    color: rgb(249, 233, 233);
+    padding-top: 200px;
+    margin-left: 32.5%;
+    animation: appearfromtop .5s linear;
+    transition-duration: 1s;
+}
+
+.textComponent:hover .line {
+    animation: changeline 1s linear;
+    transition-duration: 1s;
+}
+
+.textComponent .mainText {
+    text-align: center;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    font-size: 96px;
+    letter-spacing: 8px;
+    animation: appear 2s ease;
+}
+
+.textComponent .tagline {
+    padding: 8px;
+    text-align: center;
+    font-size: 48px;
+    animation: appearfromtop .5s linear;
+}
+
+.textComponent .landingShopButton {
+    font-size: 12px;
+    margin: 40px 34%;
+    font-weight: bolder;
+    padding: 13px 52px;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    transition-duration: .5s;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.textComponent .landingShopButton:hover {
+    background-color: transparent;
+    color: white;
+    transition-duration: .5s;
+}
+
+.moveArrows {
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 430px 50%;
+    height: 40px;
+}
+
+.downArrow1 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-align: center;
+    margin-top: 105px;
+}
+
+.downArrow2 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-align: center;
+    opacity: .9;
+    animation: moveArrow 1.5s infinite;
+}
